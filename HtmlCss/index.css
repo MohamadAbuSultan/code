@@ -1,0 +1,139 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    text-align: left; 
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(107, 106, 106);
+}
+
+.image-with-rounded-corner {
+    width: 300px;
+    height: 300px;
+    border-bottom-left-radius: 150px;
+    position: relative;
+    box-shadow: -10px 0px 10px rgba(0, 0, 255, 0.3); /* تطبيق لون السماء كلون للظل */
+    z-index: 1; 
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin-right: 320px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; 
+}
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    color: #ddd;
+  }
+  
+  li a.active {
+    color: green;
+  }
+ 
+  .hire-button {
+    background-color: rgb(80, 178, 162);
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hire-button:hover {
+    background-color: darkgreen;
+}
+
+.project-button {
+    background-color: white;
+    color: rgb(80, 178, 162);
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 2px solid rgb(80, 178, 162);
+    cursor: pointer;
+}
+
+.project-button:hover {
+    background-color: #f0f0f0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+nav i {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.rotated-image {
+    width: 270px;
+    height: 270px;
+    border-bottom-left-radius: 150px;
+    position: absolute;
+    left: 0;
+    z-index: 0; 
+    transform: rotate(-7deg);
+}
